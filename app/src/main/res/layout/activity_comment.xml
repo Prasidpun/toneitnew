@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/cardview_dark_background"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/cardview_dark_background"
+        >
+
+
+        <ImageView
+            android:id="@+id/uploadedImg"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+
+            android:scaleType="centerCrop"
+            android:src="@drawable/villainjr"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:orientation="vertical"
+            android:padding="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/uploadedImg">
+
+            <TextView
+                android:id="@+id/userName"
+                android:layout_marginBottom="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="gb pun mgx"
+                android:fontFamily="@font/unamefont"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/csBlack"
+                />
+
+            <TextView
+                android:id="@+id/status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gods knows what 'm i doing??"
+                android:textColor="@color/somkeWhite"
+                android:textSize="16sp"
+                android:maxWidth="300dp"
+                android:minWidth="200dp"
+                android:layout_marginTop="5dp"
+                tools:layout_editor_absoluteX="67dp"
+                tools:layout_editor_absoluteY="258dp" />
+
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/csBlack"
+            app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/commentRecycle"
+            android:layout_width="match_parent"
+            android:layout_height="302dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/csBlack"
+            android:orientation="horizontal"
+            android:layout_marginTop="11dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/commentRecycle"
+
+            app:layout_constraintVertical_bias="1.0">
+
+            <EditText
+                android:id="@+id/mesText"
+                android:layout_width="300dp"
+                android:layout_height="45dp"
+
+                android:layout_marginLeft="10dp"
+                android:hint="add your comment"
+                android:paddingLeft="15dp" />
+
+            <ImageView
+                android:id="@+id/send"
+                android:layout_width="40dp"
+                android:layout_height="42dp"
+
+                android:src="@drawable/msgsend"
+
+                />
+        </LinearLayout>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

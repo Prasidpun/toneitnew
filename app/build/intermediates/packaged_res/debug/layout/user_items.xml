@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/Layout"
+    android:layout_marginTop="2dp"
+    android:background="@color/cardview_dark_background">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profileImg"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/cardview_dark_background"
+        android:src="@drawable/villainjr"
+        app:civ_border_color="#1E88E5"
+        app:civ_border_width="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.222" />
+
+    <TextView
+        android:id="@+id/userName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginBottom="8dp"
+        android:text="I'm villain"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_14font_mdp"
+        app:layout_constraintStart_toEndOf="@+id/profileImg"
+        app:layout_constraintTop_toTopOf="@+id/profileImg"
+        app:layout_constraintVertical_bias="0.225" />
+
+    <TextView
+        android:id="@+id/lastMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/somkeWhite"
+        android:maxWidth="@dimen/_170mdp"
+        android:layout_marginTop="2dp"
+        android:minWidth="100dp"
+        app:layout_constraintHorizontal_bias="0.07"
+        app:layout_constraintStart_toStartOf="@+id/userName"
+        app:layout_constraintTop_toBottomOf="@+id/userName"
+        app:layout_constraintVertical_bias="0.384" />
+
+
+    <TextView
+        android:id="@+id/timeStamp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/view2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.567"
+        app:layout_constraintStart_toEndOf="@+id/userName"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.77" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/csBlack"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

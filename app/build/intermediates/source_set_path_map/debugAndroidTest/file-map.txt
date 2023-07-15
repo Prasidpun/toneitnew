@@ -1,0 +1,7 @@
+com.example.toneit.test.app-androidTest-0 /Users/prasid/Downloads/tone-it-developer/app/build/generated/res/resValues/androidTest/debug
+com.example.toneit.test.app-androidTest-1 /Users/prasid/Downloads/tone-it-developer/app/build/generated/res/rs/androidTest/debug
+com.example.toneit.test.app-mergeDebugAndroidTestResources-2 /Users/prasid/Downloads/tone-it-developer/app/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/merged.dir
+com.example.toneit.test.app-mergeDebugAndroidTestResources-3 /Users/prasid/Downloads/tone-it-developer/app/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/stripped.dir
+com.example.toneit.test.app-merged_res-4 /Users/prasid/Downloads/tone-it-developer/app/build/intermediates/merged_res/debugAndroidTest
+com.example.toneit.test.app-androidTest-5 /Users/prasid/Downloads/tone-it-developer/app/src/androidTest/res
+com.example.toneit.test.app-androidTestDebug-6 /Users/prasid/Downloads/tone-it-developer/app/src/androidTestDebug/res

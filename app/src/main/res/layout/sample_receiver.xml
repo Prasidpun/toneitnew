@@ -1,0 +1,44 @@
+<RelativeLayout android:layout_width="match_parent"
+android:layout_height="wrap_content"
+xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="16dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/receiverMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hii how are you ?  11:37"
+        android:paddingStart="16dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="12dp"
+        android:paddingBottom="8dp"
+        android:textColor="@color/white"
+        android:background="@drawable/testrect"/>
+
+    <ImageView
+        android:layout_marginTop="-1.5dp"
+        android:layout_width="8dp"
+        android:layout_height="16dp"
+        android:layout_gravity="start"
+        android:background="@drawable/testcorner"
+        />
+    <TextView
+        android:id="@+id/receiverTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="11:55"
+        android:textSize="12dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="-1dp"
+
+        />
+
+</LinearLayout>
+
+
+</RelativeLayout>

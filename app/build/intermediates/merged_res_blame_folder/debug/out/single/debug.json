@@ -1,0 +1,326 @@
+[
+    {
+        "merged": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-merged_res-34:/layout_fragment_msg_users.xml.flat",
+        "source": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-main-36:/layout/fragment_msg_users.xml"
+    },
+    {
+        "merged": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-merged_res-34:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-main-36:/mipmap-mdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-merged_res-34:/font_toneitfont.ttf.flat",
+        "source": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-main-36:/font/toneitfont.ttf"
+    },
+    {
+        "merged": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-merged_res-34:/drawable_love.png.flat",
+        "source": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-main-36:/drawable/love.png"
+    },
+    {
+        "merged": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-merged_res-34:/drawable_more.png.flat",
+        "source": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-main-36:/drawable/more.png"
+    },
+    {
+        "merged": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-merged_res-34:/layout_storydesign.xml.flat",
+        "source": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-main-36:/layout/storydesign.xml"
+    },
+    {
+        "merged": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-merged_res-34:/drawable_ic_baseline_arrow_back_24.xml.flat",
+        "source": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-main-36:/drawable/ic_baseline_arrow_back_24.xml"
+    },
+    {
+        "merged": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-merged_res-34:/drawable_share_icon.png.flat",
+        "source": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-main-36:/drawable/share_icon.png"
+    },
+    {
+        "merged": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-merged_res-34:/drawable_padlock.png.flat",
+        "source": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-main-36:/drawable/padlock.png"
+    },
+    {
+        "merged": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-merged_res-34:/layout_activity_main.xml.flat",
+        "source": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-main-36:/layout/activity_main.xml"
+    },
+    {
+        "merged": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-merged_res-34:/drawable_villainjr.jpg.flat",
+        "source": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-main-36:/drawable/villainjr.jpg"
+    },
+    {
+        "merged": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-merged_res-34:/layout_sample_sender.xml.flat",
+        "source": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-main-36:/layout/sample_sender.xml"
+    },
+    {
+        "merged": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-merged_res-34:/drawable_view.png.flat",
+        "source": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-main-36:/drawable/view.png"
+    },
+    {
+        "merged": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-merged_res-34:/layout_activity_home.xml.flat",
+        "source": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-main-36:/layout/activity_home.xml"
+    },
+    {
+        "merged": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-merged_res-34:/drawable_send.png.flat",
+        "source": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-main-36:/drawable/send.png"
+    },
+    {
+        "merged": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-merged_res-34:/drawable_comments.png.flat",
+        "source": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-main-36:/drawable/comments.png"
+    },
+    {
+        "merged": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-merged_res-34:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-main-36:/mipmap-hdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-merged_res-34:/drawable_messenger.png.flat",
+        "source": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-main-36:/drawable/messenger.png"
+    },
+    {
+        "merged": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-merged_res-34:/drawable_user.png.flat",
+        "source": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-main-36:/drawable/user.png"
+    },
+    {
+        "merged": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-merged_res-34:/layout_dailyacitvity.xml.flat",
+        "source": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-main-36:/layout/dailyacitvity.xml"
+    },
+    {
+        "merged": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-merged_res-34:/layout_fragment_home.xml.flat",
+        "source": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-main-36:/layout/fragment_home.xml"
+    },
+    {
+        "merged": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-merged_res-34:/layout_activity_message.xml.flat",
+        "source": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-main-36:/layout/activity_message.xml"
+    },
+    {
+        "merged": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-merged_res-34:/layout_fragment_profile.xml.flat",
+        "source": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-main-36:/layout/fragment_profile.xml"
+    },
+    {
+        "merged": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-merged_res-34:/font_statusfont.ttf.flat",
+        "source": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-main-36:/font/statusfont.ttf"
+    },
+    {
+        "merged": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-merged_res-34:/layout_sample_receiver.xml.flat",
+        "source": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-main-36:/layout/sample_receiver.xml"
+    },
+    {
+        "merged": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-merged_res-34:/drawable_checked.png.flat",
+        "source": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-main-36:/drawable/checked.png"
+    },
+    {
+        "merged": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-merged_res-34:/drawable_smartphone.png.flat",
+        "source": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-main-36:/drawable/smartphone.png"
+    },
+    {
+        "merged": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-merged_res-34:/layout_user_items.xml.flat",
+        "source": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-main-36:/layout/user_items.xml"
+    },
+    {
+        "merged": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-merged_res-34:/layout_usersample.xml.flat",
+        "source": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-main-36:/layout/usersample.xml"
+    },
+    {
+        "merged": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-merged_res-34:/layout_comment.xml.flat",
+        "source": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-main-36:/layout/comment.xml"
+    },
+    {
+        "merged": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-merged_res-34:/drawable_search.png.flat",
+        "source": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-main-36:/drawable/search.png"
+    },
+    {
+        "merged": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-merged_res-34:/layout_profiledesign.xml.flat",
+        "source": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-main-36:/layout/profiledesign.xml"
+    },
+    {
+        "merged": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-merged_res-34:/drawable_testcornery.xml.flat",
+        "source": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-main-36:/drawable/testcornery.xml"
+    },
+    {
+        "merged": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-merged_res-34:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-main-36:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-merged_res-34:/font_unamefont.ttf.flat",
+        "source": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-main-36:/font/unamefont.ttf"
+    },
+    {
+        "merged": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-merged_res-34:/menu_toneitmenu.xml.flat",
+        "source": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-main-36:/menu/toneitmenu.xml"
+    },
+    {
+        "merged": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-merged_res-34:/layout_fragment_search.xml.flat",
+        "source": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-main-36:/layout/fragment_search.xml"
+    },
+    {
+        "merged": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-merged_res-34:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-main-36:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-merged_res-34:/drawable_group.png.flat",
+        "source": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-main-36:/drawable/group.png"
+    },
+    {
+        "merged": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-merged_res-34:/drawable_story.png.flat",
+        "source": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-main-36:/drawable/story.png"
+    },
+    {
+        "merged": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-merged_res-34:/drawable_applogo.png.flat",
+        "source": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-main-36:/drawable/applogo.png"
+    },
+    {
+        "merged": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-merged_res-34:/drawable_google.png.flat",
+        "source": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-main-36:/drawable/google.png"
+    },
+    {
+        "merged": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-merged_res-34:/drawable_angle_left.png.flat",
+        "source": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-main-36:/drawable/angle_left.png"
+    },
+    {
+        "merged": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-merged_res-34:/drawable_image_gallery.png.flat",
+        "source": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-main-36:/drawable/image_gallery.png"
+    },
+    {
+        "merged": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-merged_res-34:/drawable_bell.png.flat",
+        "source": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-main-36:/drawable/bell.png"
+    },
+    {
+        "merged": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-merged_res-34:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-main-36:/mipmap-xxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-merged_res-34:/layout_activity_login.xml.flat",
+        "source": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-main-36:/layout/activity_login.xml"
+    },
+    {
+        "merged": "com.example.toneit.app-merged_res-34:/layout_activity_message.xml.flat",
+        "source": "com.example.toneit.app-main-36:/layout/activity_message.xml"
+    },
+    {
+        "merged": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-merged_res-34:/drawable_email.png.flat",
+        "source": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-main-36:/drawable/email.png"
+    },
+    {
+        "merged": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-merged_res-34:/drawable_msgsend.png.flat",
+        "source": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-main-36:/drawable/msgsend.png"
+    },
+    {
+        "merged": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-merged_res-34:/drawable_loginbackround.xml.flat",
+        "source": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-main-36:/drawable/loginbackround.xml"
+    },
+    {
+        "merged": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-merged_res-34:/drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-main-36:/drawable-v24/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-merged_res-34:/drawable_home.png.flat",
+        "source": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-main-36:/drawable/home.png"
+    },
+    {
+        "merged": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-merged_res-34:/drawable_follow.png.flat",
+        "source": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-main-36:/drawable/follow.png"
+    },
+    {
+        "merged": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-merged_res-34:/layout_activity_profile.xml.flat",
+        "source": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-main-36:/layout/activity_profile.xml"
+    },
+    {
+        "merged": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-merged_res-34:/drawable_testrecty.xml.flat",
+        "source": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-main-36:/drawable/testrecty.xml"
+    },
+    {
+        "merged": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-merged_res-34:/layout_fragment_story.xml.flat",
+        "source": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-main-36:/layout/fragment_story.xml"
+    },
+    {
+        "merged": "com.example.toneit.app-merged_res-34:/layout_activity_notification.xml.flat",
+        "source": "com.example.toneit.app-main-36:/layout/activity_notification.xml"
+    },
+    {
+        "merged": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-merged_res-34:/drawable_villain.jpg.flat",
+        "source": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-main-36:/drawable/villain.jpg"
+    },
+    {
+        "merged": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-merged_res-34:/drawable_gradientbackground.xml.flat",
+        "source": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-main-36:/drawable/gradientbackground.xml"
+    },
+    {
+        "merged": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-merged_res-34:/layout_comment_design.xml.flat",
+        "source": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-main-36:/layout/comment_design.xml"
+    },
+    {
+        "merged": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-merged_res-34:/drawable_villainjr1.jpg.flat",
+        "source": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-main-36:/drawable/villainjr1.jpg"
+    },
+    {
+        "merged": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-merged_res-34:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-main-36:/mipmap-mdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-merged_res-34:/drawable_timers.png.flat",
+        "source": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-main-36:/drawable/timers.png"
+    },
+    {
+        "merged": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-merged_res-34:/drawable_testrect.xml.flat",
+        "source": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-main-36:/drawable/testrect.xml"
+    },
+    {
+        "merged": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-merged_res-34:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-main-36:/mipmap-xhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-merged_res-34:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-main-36:/mipmap-hdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-merged_res-34:/layout_activity_chat_detail.xml.flat",
+        "source": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-main-36:/layout/activity_chat_detail.xml"
+    },
+    {
+        "merged": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-merged_res-34:/drawable_testcorner.xml.flat",
+        "source": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-main-36:/drawable/testcorner.xml"
+    },
+    {
+        "merged": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-merged_res-34:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-main-36:/mipmap-xhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-merged_res-34:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-main-36:/mipmap-xxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-merged_res-34:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-main-36:/mipmap-xxxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-merged_res-34:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-main-36:/mipmap-xxxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-merged_res-34:/layout_activity_comment.xml.flat",
+        "source": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-main-36:/layout/activity_comment.xml"
+    },
+    {
+        "merged": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-merged_res-34:/layout_fragment_notify.xml.flat",
+        "source": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-main-36:/layout/fragment_notify.xml"
+    },
+    {
+        "merged": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-merged_res-34:/layout_activity_user_profile.xml.flat",
+        "source": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-main-36:/layout/activity_user_profile.xml"
+    },
+    {
+        "merged": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-merged_res-34:/layout_activity_signup.xml.flat",
+        "source": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-main-36:/layout/activity_signup.xml"
+    },
+    {
+        "merged": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-merged_res-34:/drawable_ic_launcher_background.xml.flat",
+        "source": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-main-36:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-merged_res-34:/drawable_signupbackground.xml.flat",
+        "source": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-main-36:/drawable/signupbackground.xml"
+    },
+    {
+        "merged": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-merged_res-34:/layout_fragment_chats.xml.flat",
+        "source": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-main-36:/layout/fragment_chats.xml"
+    },
+    {
+        "merged": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-merged_res-34:/layout_gitdemolayout.xml.flat",
+        "source": "/Users/prasid/.gradle/daemon/7.3.3/com.example.toneit.app-main-36:/layout/gitdemolayout.xml"
+    }
+]

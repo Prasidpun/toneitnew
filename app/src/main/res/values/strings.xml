@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Tone it</string>
+    <string name="sign">Sign in Now</string>
+    <string name="signup">Create your Account</string>
+    <string name="signHint">email</string>
+    <string name="password">password</string>
+    <string name="repeatPassword">Repeat Password</string>
+    <string name="jones_john">Full Name</string>
+    <string name="sing_in_from_here">Sign in from here</string>
+    <string name="already_have_an_account">Already have an Account?</string>
+    <string name="i_agree_to_the_terms_and_conditions">i agree to the Terms and conditions</string>
+    <string name="sign_up">Sign up</string>
+    <string name="remember_me">Remember me?</string>
+    <string name="forget_password">forget password?</string>
+    <string name="sing_in">Sign in</string>
+    <string name="don_t_you_have_an_account">Don\'t you have an account?</string>
+    <string name="sign_up_from_here">Sign up from here</string>
+    <string name="todo">TODO</string>
+    <string name="tone_it_is_not_only_the_world_s_largest_social_network_it_s_also_the_most_developed_channel_for_organic_and_paid_social_marketing">Tone it is not only the world\'s largest social network, it\'s also the most developed channel for organic and paid social marketing</string>
+    <string name="welcome_to_tone_it">Welcome to Tone it</string>
+    <string name="sign_in">Sign in</string>
+    <string name="already_a_member">Already a member?</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="villainjr">villainjr</string>
+    <string name="villain_jr">username</string>
+    <!-- TODO: Remove or change this placeholder text -->
+
+
+</resources>

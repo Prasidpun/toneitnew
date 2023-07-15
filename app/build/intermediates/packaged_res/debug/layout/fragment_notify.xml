@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+   android:background="@color/cardview_dark_background"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/likedView"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="79dp"
+            android:background="@color/cardview_dark_background"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_image"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_marginStart="16dp"
+                android:src="@drawable/villainjr"
+                app:civ_border_color="#1E88E5"
+                app:civ_border_width="2dp"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/userName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:paddingEnd="5dp"
+                android:text="I'm villain"
+                android:fontFamily="@font/unamefont"
+                android:textColor="@color/white"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/reqTime"
+                app:layout_constraintEnd_toStartOf="@+id/textView"
+                app:layout_constraintStart_toEndOf="@+id/profile_image"
+                app:layout_constraintTop_toTopOf="@+id/profile_image" />
+
+            <TextView
+                android:id="@+id/reqTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/timers"
+                android:drawablePadding="5dp"
+                android:text="5:55"
+                android:textColor="@color/somkeWhite"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="@+id/profile_image"
+                app:layout_constraintEnd_toEndOf="@+id/userName"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/userName"
+                app:layout_constraintTop_toBottomOf="@+id/userName" />
+
+            <ImageView
+                android:id="@+id/likeImg"
+                android:layout_width="56dp"
+                android:layout_height="68dp"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/villainjr"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+
+                app:layout_constraintHorizontal_bias="0.828"
+                app:layout_constraintStart_toEndOf="@+id/textView"
+
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.454" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="160sp"
+                android:layout_height="wrap_content"
+                android:text="liked your photo."
+                android:textSize="16sp"
+                android:fontFamily="@font/statusfont"
+                android:textColor="@color/somkeWhite"
+                app:layout_constraintBottom_toBottomOf="@+id/userName"
+                app:layout_constraintStart_toEndOf="@+id/userName"
+                app:layout_constraintTop_toTopOf="@+id/userName" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/reqView"
+        android:layout_width="match_parent"
+        app:cardBackgroundColor="@color/white"
+        android:layout_height="100dp"
+        android:layout_marginTop="5dp"
+
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/likedView">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout_editor_absoluteX="0dp"
+            android:background="@color/cardview_dark_background"
+            tools:layout_editor_absoluteY="430dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/cmtProfileImg"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_marginStart="16dp"
+                android:src="@drawable/villainjr"
+                app:civ_border_color="#1E88E5"
+                app:civ_border_width="2dp"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.529" />
+
+            <TextView
+                android:id="@+id/cmtUserName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="28dp"
+                android:paddingEnd="5dp"
+                android:text="I'm villain"
+                android:fontFamily="@font/unamefont"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/cmt"
+                app:layout_constraintStart_toEndOf="@+id/cmtProfileImg"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <TextView
+                android:id="@+id/cmtTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/timers"
+                android:drawablePadding="5dp"
+                android:text="5:55"
+                android:textColor="@color/somkeWhite"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/cmtImg"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/cmt"
+                app:layout_constraintTop_toBottomOf="@+id/cmt"
+                app:layout_constraintVertical_bias="0.875" />
+
+            <ImageView
+                android:id="@+id/cmtImg"
+                android:layout_width="56dp"
+                android:layout_height="68dp"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/villainjr"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/cmtUserName"
+                app:layout_constraintTop_toTopOf="parent"
+
+                />
+
+            <TextView
+                android:id="@+id/cmt"
+                android:layout_width="190sp"
+                android:layout_height="wrap_content"
+                android:text="commented on your photo"
+                android:textColor="@color/somkeWhite"
+                android:textSize="16sp"
+                android:fontFamily="@font/statusfont"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/cmtImg"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@id/cmtUserName"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.513" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="match_parent"
+        android:layout_height="79dp"
+        android:layout_marginTop="5dp"
+        app:cardBackgroundColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/reqView">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="79dp"
+            android:background="@color/cardview_dark_background"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/reqImage"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/villainjr"
+                app:civ_border_color="#1E88E5"
+
+                app:civ_border_width="2dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <TextView
+                android:id="@+id/reqUserName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:paddingEnd="5dp"
+                android:text="I'm villain"
+                android:textSize="18sp"
+                android:fontFamily="@font/unamefont"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/time"
+                app:layout_constraintEnd_toStartOf="@+id/textView6"
+                app:layout_constraintStart_toEndOf="@+id/reqImage"
+                app:layout_constraintTop_toTopOf="@+id/reqImage" />
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/timers"
+                android:drawablePadding="5dp"
+                android:text="5:55"
+                android:textSize="18sp"
+                android:textColor="@color/somkeWhite"
+                app:layout_constraintBottom_toBottomOf="@+id/reqImage"
+                app:layout_constraintEnd_toEndOf="@+id/reqUserName"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/reqUserName"
+                app:layout_constraintTop_toBottomOf="@+id/reqUserName"
+                app:layout_constraintVertical_bias="0.6" />
+
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="190sp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:fontFamily="@font/statusfont"
+                android:text="sent you a friend request."
+                android:textColor="@color/somkeWhite"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/reqUserName"
+                app:layout_constraintStart_toEndOf="@+id/reqUserName"
+                app:layout_constraintTop_toTopOf="@+id/reqUserName"
+                app:layout_constraintVertical_bias="1.0" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="79dp"
+        android:layout_marginTop="5dp"
+        app:cardBackgroundColor="@color/csBlack"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView2">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="79dp"
+            android:background="@color/cardview_dark_background"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/accImage"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/villainjr"
+                app:civ_border_color="#1E88E5"
+
+                app:civ_border_width="2dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/accUserName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:paddingEnd="5dp"
+                android:text="I'm villain"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/unamefont"
+                app:layout_constraintBottom_toTopOf="@+id/accTime"
+                app:layout_constraintEnd_toStartOf="@+id/textView7"
+                app:layout_constraintStart_toEndOf="@+id/accImage"
+                app:layout_constraintTop_toTopOf="@+id/accImage" />
+
+            <TextView
+                android:id="@+id/accTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="216dp"
+                android:drawableLeft="@drawable/timers"
+                android:drawablePadding="5dp"
+                android:text="5:55"
+                android:textColor="@color/somkeWhite"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="@+id/accImage"
+                app:layout_constraintEnd_toEndOf="@+id/textView7"
+                app:layout_constraintStart_toStartOf="@+id/accUserName"
+                app:layout_constraintTop_toBottomOf="@+id/accUserName"
+                app:layout_constraintVertical_bias="0.6" />
+
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="190sp"
+                android:layout_height="wrap_content"
+                android:text="Accept you a friend request."
+                android:textSize="16sp"
+                android:textColor="@color/somkeWhite"
+                android:layout_marginEnd="12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/accUserName"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:fontFamily="@font/statusfont"
+                app:layout_constraintStart_toEndOf="@+id/accUserName"
+                app:layout_constraintTop_toTopOf="@+id/accUserName" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,288 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.toneit"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="25"
+8-->/Users/prasid/Downloads/tone-it-developer/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="32" />
+9-->/Users/prasid/Downloads/tone-it-developer/app/src/main/AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->/Users/prasid/Downloads/tone-it-developer/app/src/main/AndroidManifest.xml:5:5-67
+11-->/Users/prasid/Downloads/tone-it-developer/app/src/main/AndroidManifest.xml:5:22-64
+12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+12-->[com.google.firebase:firebase-auth:21.0.1] /Users/prasid/.gradle/caches/transforms-3/d745ed129e67fccd014866d5ae836310/transformed/firebase-auth-21.0.1/AndroidManifest.xml:24:5-79
+12-->[com.google.firebase:firebase-auth:21.0.1] /Users/prasid/.gradle/caches/transforms-3/d745ed129e67fccd014866d5ae836310/transformed/firebase-auth-21.0.1/AndroidManifest.xml:24:22-76
+13
+14    <application
+14-->/Users/prasid/Downloads/tone-it-developer/app/src/main/AndroidManifest.xml:7:5-50:19
+15        android:allowBackup="true"
+15-->/Users/prasid/Downloads/tone-it-developer/app/src/main/AndroidManifest.xml:8:9-35
+16        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+16-->[androidx.core:core:1.7.0] /Users/prasid/.gradle/caches/transforms-3/e84792a16814e572b147be1ee4f0accc/transformed/core-1.7.0/AndroidManifest.xml:24:18-86
+17        android:debuggable="true"
+18        android:extractNativeLibs="false"
+19        android:icon="@mipmap/ic_launcher"
+19-->/Users/prasid/Downloads/tone-it-developer/app/src/main/AndroidManifest.xml:9:9-43
+20        android:label="@string/app_name"
+20-->/Users/prasid/Downloads/tone-it-developer/app/src/main/AndroidManifest.xml:10:9-41
+21        android:roundIcon="@mipmap/ic_launcher_round"
+21-->/Users/prasid/Downloads/tone-it-developer/app/src/main/AndroidManifest.xml:11:9-54
+22        android:supportsRtl="true"
+22-->/Users/prasid/Downloads/tone-it-developer/app/src/main/AndroidManifest.xml:12:9-35
+23        android:testOnly="true"
+24        android:theme="@style/Theme.ToneIt" >
+24-->/Users/prasid/Downloads/tone-it-developer/app/src/main/AndroidManifest.xml:13:9-44
+25        <activity
+25-->/Users/prasid/Downloads/tone-it-developer/app/src/main/AndroidManifest.xml:14:9-16:40
+26            android:name="com.example.toneit.NotificationActivity"
+26-->/Users/prasid/Downloads/tone-it-developer/app/src/main/AndroidManifest.xml:15:13-49
+27            android:exported="false" />
+27-->/Users/prasid/Downloads/tone-it-developer/app/src/main/AndroidManifest.xml:16:13-37
+28        <activity
+28-->/Users/prasid/Downloads/tone-it-developer/app/src/main/AndroidManifest.xml:17:9-19:40
+29            android:name="com.example.toneit.message.ChatDetailActivity"
+29-->/Users/prasid/Downloads/tone-it-developer/app/src/main/AndroidManifest.xml:18:13-55
+30            android:exported="false" />
+30-->/Users/prasid/Downloads/tone-it-developer/app/src/main/AndroidManifest.xml:19:13-37
+31        <activity
+31-->/Users/prasid/Downloads/tone-it-developer/app/src/main/AndroidManifest.xml:20:9-22:40
+32            android:name="com.example.toneit.message.Message"
+32-->/Users/prasid/Downloads/tone-it-developer/app/src/main/AndroidManifest.xml:21:13-44
+33            android:exported="false" />
+33-->/Users/prasid/Downloads/tone-it-developer/app/src/main/AndroidManifest.xml:22:13-37
+34        <activity
+34-->/Users/prasid/Downloads/tone-it-developer/app/src/main/AndroidManifest.xml:23:9-25:40
+35            android:name="com.example.toneit.FragmentProfile.userProfile"
+35-->/Users/prasid/Downloads/tone-it-developer/app/src/main/AndroidManifest.xml:24:13-56
+36            android:exported="false" />
+36-->/Users/prasid/Downloads/tone-it-developer/app/src/main/AndroidManifest.xml:25:13-37
+37        <activity
+37-->/Users/prasid/Downloads/tone-it-developer/app/src/main/AndroidManifest.xml:26:9-28:40
+38            android:name="com.example.toneit.Post.CommentActivity"
+38-->/Users/prasid/Downloads/tone-it-developer/app/src/main/AndroidManifest.xml:27:13-49
+39            android:exported="false" />
+39-->/Users/prasid/Downloads/tone-it-developer/app/src/main/AndroidManifest.xml:28:13-37
+40        <activity
+40-->/Users/prasid/Downloads/tone-it-developer/app/src/main/AndroidManifest.xml:29:9-31:40
+41            android:name="com.example.toneit.FragmentProfile.Profile"
+41-->/Users/prasid/Downloads/tone-it-developer/app/src/main/AndroidManifest.xml:30:13-52
+42            android:exported="false" />
+42-->/Users/prasid/Downloads/tone-it-developer/app/src/main/AndroidManifest.xml:31:13-37
+43        <activity
+43-->/Users/prasid/Downloads/tone-it-developer/app/src/main/AndroidManifest.xml:32:9-34:40
+44            android:name="com.example.toneit.UserAuthentication.Signup"
+44-->/Users/prasid/Downloads/tone-it-developer/app/src/main/AndroidManifest.xml:33:13-54
+45            android:exported="false" />
+45-->/Users/prasid/Downloads/tone-it-developer/app/src/main/AndroidManifest.xml:34:13-37
+46        <activity
+46-->/Users/prasid/Downloads/tone-it-developer/app/src/main/AndroidManifest.xml:35:9-37:40
+47            android:name="com.example.toneit.UserAuthentication.Login"
+47-->/Users/prasid/Downloads/tone-it-developer/app/src/main/AndroidManifest.xml:36:13-53
+48            android:exported="false" />
+48-->/Users/prasid/Downloads/tone-it-developer/app/src/main/AndroidManifest.xml:37:13-37
+49        <activity
+49-->/Users/prasid/Downloads/tone-it-developer/app/src/main/AndroidManifest.xml:38:9-40:40
+50            android:name="com.example.toneit.Post.PostModel$HomeActivity"
+50-->/Users/prasid/Downloads/tone-it-developer/app/src/main/AndroidManifest.xml:39:13-56
+51            android:exported="false" />
+51-->/Users/prasid/Downloads/tone-it-developer/app/src/main/AndroidManifest.xml:40:13-37
+52        <activity
+52-->/Users/prasid/Downloads/tone-it-developer/app/src/main/AndroidManifest.xml:41:9-49:20
+53            android:name="com.example.toneit.MainActivity"
+53-->/Users/prasid/Downloads/tone-it-developer/app/src/main/AndroidManifest.xml:42:13-41
+54            android:exported="true" >
+54-->/Users/prasid/Downloads/tone-it-developer/app/src/main/AndroidManifest.xml:43:13-36
+55            <intent-filter>
+55-->/Users/prasid/Downloads/tone-it-developer/app/src/main/AndroidManifest.xml:44:13-48:29
+56                <action android:name="android.intent.action.MAIN" />
+56-->/Users/prasid/Downloads/tone-it-developer/app/src/main/AndroidManifest.xml:45:17-69
+56-->/Users/prasid/Downloads/tone-it-developer/app/src/main/AndroidManifest.xml:45:25-66
+57
+58                <category android:name="android.intent.category.LAUNCHER" />
+58-->/Users/prasid/Downloads/tone-it-developer/app/src/main/AndroidManifest.xml:47:17-77
+58-->/Users/prasid/Downloads/tone-it-developer/app/src/main/AndroidManifest.xml:47:27-74
+59            </intent-filter>
+60        </activity>
+61        <activity
+61-->[com.google.firebase:firebase-auth:21.0.1] /Users/prasid/.gradle/caches/transforms-3/d745ed129e67fccd014866d5ae836310/transformed/firebase-auth-21.0.1/AndroidManifest.xml:27:9-44:20
+62            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+62-->[com.google.firebase:firebase-auth:21.0.1] /Users/prasid/.gradle/caches/transforms-3/d745ed129e67fccd014866d5ae836310/transformed/firebase-auth-21.0.1/AndroidManifest.xml:28:13-80
+63            android:excludeFromRecents="true"
+63-->[com.google.firebase:firebase-auth:21.0.1] /Users/prasid/.gradle/caches/transforms-3/d745ed129e67fccd014866d5ae836310/transformed/firebase-auth-21.0.1/AndroidManifest.xml:29:13-46
+64            android:exported="true"
+64-->[com.google.firebase:firebase-auth:21.0.1] /Users/prasid/.gradle/caches/transforms-3/d745ed129e67fccd014866d5ae836310/transformed/firebase-auth-21.0.1/AndroidManifest.xml:30:13-36
+65            android:launchMode="singleTask"
+65-->[com.google.firebase:firebase-auth:21.0.1] /Users/prasid/.gradle/caches/transforms-3/d745ed129e67fccd014866d5ae836310/transformed/firebase-auth-21.0.1/AndroidManifest.xml:31:13-44
+66            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+66-->[com.google.firebase:firebase-auth:21.0.1] /Users/prasid/.gradle/caches/transforms-3/d745ed129e67fccd014866d5ae836310/transformed/firebase-auth-21.0.1/AndroidManifest.xml:32:13-72
+67            <intent-filter>
+67-->[com.google.firebase:firebase-auth:21.0.1] /Users/prasid/.gradle/caches/transforms-3/d745ed129e67fccd014866d5ae836310/transformed/firebase-auth-21.0.1/AndroidManifest.xml:33:13-43:29
+68                <action android:name="android.intent.action.VIEW" />
+68-->[com.google.firebase:firebase-auth:21.0.1] /Users/prasid/.gradle/caches/transforms-3/d745ed129e67fccd014866d5ae836310/transformed/firebase-auth-21.0.1/AndroidManifest.xml:34:17-69
+68-->[com.google.firebase:firebase-auth:21.0.1] /Users/prasid/.gradle/caches/transforms-3/d745ed129e67fccd014866d5ae836310/transformed/firebase-auth-21.0.1/AndroidManifest.xml:34:25-66
+69
+70                <category android:name="android.intent.category.DEFAULT" />
+70-->[com.google.firebase:firebase-auth:21.0.1] /Users/prasid/.gradle/caches/transforms-3/d745ed129e67fccd014866d5ae836310/transformed/firebase-auth-21.0.1/AndroidManifest.xml:36:17-76
+70-->[com.google.firebase:firebase-auth:21.0.1] /Users/prasid/.gradle/caches/transforms-3/d745ed129e67fccd014866d5ae836310/transformed/firebase-auth-21.0.1/AndroidManifest.xml:36:27-73
+71                <category android:name="android.intent.category.BROWSABLE" />
+71-->[com.google.firebase:firebase-auth:21.0.1] /Users/prasid/.gradle/caches/transforms-3/d745ed129e67fccd014866d5ae836310/transformed/firebase-auth-21.0.1/AndroidManifest.xml:37:17-78
+71-->[com.google.firebase:firebase-auth:21.0.1] /Users/prasid/.gradle/caches/transforms-3/d745ed129e67fccd014866d5ae836310/transformed/firebase-auth-21.0.1/AndroidManifest.xml:37:27-75
+72
+73                <data
+73-->[com.google.firebase:firebase-auth:21.0.1] /Users/prasid/.gradle/caches/transforms-3/d745ed129e67fccd014866d5ae836310/transformed/firebase-auth-21.0.1/AndroidManifest.xml:39:17-42:51
+74                    android:host="firebase.auth"
+74-->[com.google.firebase:firebase-auth:21.0.1] /Users/prasid/.gradle/caches/transforms-3/d745ed129e67fccd014866d5ae836310/transformed/firebase-auth-21.0.1/AndroidManifest.xml:40:21-49
+75                    android:path="/"
+75-->[com.google.firebase:firebase-auth:21.0.1] /Users/prasid/.gradle/caches/transforms-3/d745ed129e67fccd014866d5ae836310/transformed/firebase-auth-21.0.1/AndroidManifest.xml:41:21-37
+76                    android:scheme="genericidp" />
+76-->[com.google.firebase:firebase-auth:21.0.1] /Users/prasid/.gradle/caches/transforms-3/d745ed129e67fccd014866d5ae836310/transformed/firebase-auth-21.0.1/AndroidManifest.xml:42:21-48
+77            </intent-filter>
+78        </activity>
+79        <activity
+79-->[com.google.firebase:firebase-auth:21.0.1] /Users/prasid/.gradle/caches/transforms-3/d745ed129e67fccd014866d5ae836310/transformed/firebase-auth-21.0.1/AndroidManifest.xml:45:9-62:20
+80            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+80-->[com.google.firebase:firebase-auth:21.0.1] /Users/prasid/.gradle/caches/transforms-3/d745ed129e67fccd014866d5ae836310/transformed/firebase-auth-21.0.1/AndroidManifest.xml:46:13-79
+81            android:excludeFromRecents="true"
+81-->[com.google.firebase:firebase-auth:21.0.1] /Users/prasid/.gradle/caches/transforms-3/d745ed129e67fccd014866d5ae836310/transformed/firebase-auth-21.0.1/AndroidManifest.xml:47:13-46
+82            android:exported="true"
+82-->[com.google.firebase:firebase-auth:21.0.1] /Users/prasid/.gradle/caches/transforms-3/d745ed129e67fccd014866d5ae836310/transformed/firebase-auth-21.0.1/AndroidManifest.xml:48:13-36
+83            android:launchMode="singleTask"
+83-->[com.google.firebase:firebase-auth:21.0.1] /Users/prasid/.gradle/caches/transforms-3/d745ed129e67fccd014866d5ae836310/transformed/firebase-auth-21.0.1/AndroidManifest.xml:49:13-44
+84            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+84-->[com.google.firebase:firebase-auth:21.0.1] /Users/prasid/.gradle/caches/transforms-3/d745ed129e67fccd014866d5ae836310/transformed/firebase-auth-21.0.1/AndroidManifest.xml:50:13-72
+85            <intent-filter>
+85-->[com.google.firebase:firebase-auth:21.0.1] /Users/prasid/.gradle/caches/transforms-3/d745ed129e67fccd014866d5ae836310/transformed/firebase-auth-21.0.1/AndroidManifest.xml:51:13-61:29
+86                <action android:name="android.intent.action.VIEW" />
+86-->[com.google.firebase:firebase-auth:21.0.1] /Users/prasid/.gradle/caches/transforms-3/d745ed129e67fccd014866d5ae836310/transformed/firebase-auth-21.0.1/AndroidManifest.xml:34:17-69
+86-->[com.google.firebase:firebase-auth:21.0.1] /Users/prasid/.gradle/caches/transforms-3/d745ed129e67fccd014866d5ae836310/transformed/firebase-auth-21.0.1/AndroidManifest.xml:34:25-66
+87
+88                <category android:name="android.intent.category.DEFAULT" />
+88-->[com.google.firebase:firebase-auth:21.0.1] /Users/prasid/.gradle/caches/transforms-3/d745ed129e67fccd014866d5ae836310/transformed/firebase-auth-21.0.1/AndroidManifest.xml:36:17-76
+88-->[com.google.firebase:firebase-auth:21.0.1] /Users/prasid/.gradle/caches/transforms-3/d745ed129e67fccd014866d5ae836310/transformed/firebase-auth-21.0.1/AndroidManifest.xml:36:27-73
+89                <category android:name="android.intent.category.BROWSABLE" />
+89-->[com.google.firebase:firebase-auth:21.0.1] /Users/prasid/.gradle/caches/transforms-3/d745ed129e67fccd014866d5ae836310/transformed/firebase-auth-21.0.1/AndroidManifest.xml:37:17-78
+89-->[com.google.firebase:firebase-auth:21.0.1] /Users/prasid/.gradle/caches/transforms-3/d745ed129e67fccd014866d5ae836310/transformed/firebase-auth-21.0.1/AndroidManifest.xml:37:27-75
+90
+91                <data
+91-->[com.google.firebase:firebase-auth:21.0.1] /Users/prasid/.gradle/caches/transforms-3/d745ed129e67fccd014866d5ae836310/transformed/firebase-auth-21.0.1/AndroidManifest.xml:39:17-42:51
+92                    android:host="firebase.auth"
+92-->[com.google.firebase:firebase-auth:21.0.1] /Users/prasid/.gradle/caches/transforms-3/d745ed129e67fccd014866d5ae836310/transformed/firebase-auth-21.0.1/AndroidManifest.xml:40:21-49
+93                    android:path="/"
+93-->[com.google.firebase:firebase-auth:21.0.1] /Users/prasid/.gradle/caches/transforms-3/d745ed129e67fccd014866d5ae836310/transformed/firebase-auth-21.0.1/AndroidManifest.xml:41:21-37
+94                    android:scheme="recaptcha" />
+94-->[com.google.firebase:firebase-auth:21.0.1] /Users/prasid/.gradle/caches/transforms-3/d745ed129e67fccd014866d5ae836310/transformed/firebase-auth-21.0.1/AndroidManifest.xml:42:21-48
+95            </intent-filter>
+96        </activity>
+97
+98        <service
+98-->[com.google.firebase:firebase-auth:21.0.1] /Users/prasid/.gradle/caches/transforms-3/d745ed129e67fccd014866d5ae836310/transformed/firebase-auth-21.0.1/AndroidManifest.xml:64:9-73:19
+99            android:name="com.google.firebase.auth.api.fallback.service.FirebaseAuthFallbackService"
+99-->[com.google.firebase:firebase-auth:21.0.1] /Users/prasid/.gradle/caches/transforms-3/d745ed129e67fccd014866d5ae836310/transformed/firebase-auth-21.0.1/AndroidManifest.xml:65:13-101
+100            android:enabled="true"
+100-->[com.google.firebase:firebase-auth:21.0.1] /Users/prasid/.gradle/caches/transforms-3/d745ed129e67fccd014866d5ae836310/transformed/firebase-auth-21.0.1/AndroidManifest.xml:66:13-35
+101            android:exported="false" >
+101-->[com.google.firebase:firebase-auth:21.0.1] /Users/prasid/.gradle/caches/transforms-3/d745ed129e67fccd014866d5ae836310/transformed/firebase-auth-21.0.1/AndroidManifest.xml:67:13-37
+102            <intent-filter>
+102-->[com.google.firebase:firebase-auth:21.0.1] /Users/prasid/.gradle/caches/transforms-3/d745ed129e67fccd014866d5ae836310/transformed/firebase-auth-21.0.1/AndroidManifest.xml:68:13-72:29
+103                <action android:name="com.google.firebase.auth.api.gms.service.START" />
+103-->[com.google.firebase:firebase-auth:21.0.1] /Users/prasid/.gradle/caches/transforms-3/d745ed129e67fccd014866d5ae836310/transformed/firebase-auth-21.0.1/AndroidManifest.xml:69:17-89
+103-->[com.google.firebase:firebase-auth:21.0.1] /Users/prasid/.gradle/caches/transforms-3/d745ed129e67fccd014866d5ae836310/transformed/firebase-auth-21.0.1/AndroidManifest.xml:69:25-86
+104
+105                <category android:name="android.intent.category.DEFAULT" />
+105-->[com.google.firebase:firebase-auth:21.0.1] /Users/prasid/.gradle/caches/transforms-3/d745ed129e67fccd014866d5ae836310/transformed/firebase-auth-21.0.1/AndroidManifest.xml:36:17-76
+105-->[com.google.firebase:firebase-auth:21.0.1] /Users/prasid/.gradle/caches/transforms-3/d745ed129e67fccd014866d5ae836310/transformed/firebase-auth-21.0.1/AndroidManifest.xml:36:27-73
+106            </intent-filter>
+107        </service>
+108        <service
+108-->[com.google.firebase:firebase-auth:21.0.1] /Users/prasid/.gradle/caches/transforms-3/d745ed129e67fccd014866d5ae836310/transformed/firebase-auth-21.0.1/AndroidManifest.xml:74:9-80:19
+109            android:name="com.google.firebase.components.ComponentDiscoveryService"
+109-->[com.google.firebase:firebase-auth:21.0.1] /Users/prasid/.gradle/caches/transforms-3/d745ed129e67fccd014866d5ae836310/transformed/firebase-auth-21.0.1/AndroidManifest.xml:75:13-84
+110            android:directBootAware="true"
+110-->[com.google.firebase:firebase-common:20.0.0] /Users/prasid/.gradle/caches/transforms-3/464a385f8913a9c79429569af29508f0/transformed/firebase-common-20.0.0/AndroidManifest.xml:35:13-43
+111            android:exported="false" >
+111-->[com.google.firebase:firebase-auth:21.0.1] /Users/prasid/.gradle/caches/transforms-3/d745ed129e67fccd014866d5ae836310/transformed/firebase-auth-21.0.1/AndroidManifest.xml:76:13-37
+112            <meta-data
+112-->[com.google.firebase:firebase-auth:21.0.1] /Users/prasid/.gradle/caches/transforms-3/d745ed129e67fccd014866d5ae836310/transformed/firebase-auth-21.0.1/AndroidManifest.xml:77:13-79:85
+113                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+113-->[com.google.firebase:firebase-auth:21.0.1] /Users/prasid/.gradle/caches/transforms-3/d745ed129e67fccd014866d5ae836310/transformed/firebase-auth-21.0.1/AndroidManifest.xml:78:17-109
+114                android:value="com.google.firebase.components.ComponentRegistrar" />
+114-->[com.google.firebase:firebase-auth:21.0.1] /Users/prasid/.gradle/caches/transforms-3/d745ed129e67fccd014866d5ae836310/transformed/firebase-auth-21.0.1/AndroidManifest.xml:79:17-82
+115            <meta-data
+115-->[com.google.firebase:firebase-database:20.0.3] /Users/prasid/.gradle/caches/transforms-3/0bf99c412c54dfd0fb41405291891ea8/transformed/firebase-database-20.0.3/AndroidManifest.xml:32:13-34:85
+116                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+116-->[com.google.firebase:firebase-database:20.0.3] /Users/prasid/.gradle/caches/transforms-3/0bf99c412c54dfd0fb41405291891ea8/transformed/firebase-database-20.0.3/AndroidManifest.xml:33:17-109
+117                android:value="com.google.firebase.components.ComponentRegistrar" />
+117-->[com.google.firebase:firebase-database:20.0.3] /Users/prasid/.gradle/caches/transforms-3/0bf99c412c54dfd0fb41405291891ea8/transformed/firebase-database-20.0.3/AndroidManifest.xml:34:17-82
+118            <meta-data
+118-->[com.google.firebase:firebase-storage:20.0.0] /Users/prasid/.gradle/caches/transforms-3/2342eb796f4f4c673846400aa5ab8b62/transformed/firebase-storage-20.0.0/AndroidManifest.xml:33:13-35:85
+119                android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar"
+119-->[com.google.firebase:firebase-storage:20.0.0] /Users/prasid/.gradle/caches/transforms-3/2342eb796f4f4c673846400aa5ab8b62/transformed/firebase-storage-20.0.0/AndroidManifest.xml:34:17-107
+120                android:value="com.google.firebase.components.ComponentRegistrar" />
+120-->[com.google.firebase:firebase-storage:20.0.0] /Users/prasid/.gradle/caches/transforms-3/2342eb796f4f4c673846400aa5ab8b62/transformed/firebase-storage-20.0.0/AndroidManifest.xml:35:17-82
+121        </service>
+122
+123        <provider
+123-->[com.squareup.picasso:picasso:2.71828] /Users/prasid/.gradle/caches/transforms-3/10c906eec8890b4ca5a7f40fecb70260/transformed/picasso-2.71828/AndroidManifest.xml:8:9-11:40
+124            android:name="com.squareup.picasso.PicassoProvider"
+124-->[com.squareup.picasso:picasso:2.71828] /Users/prasid/.gradle/caches/transforms-3/10c906eec8890b4ca5a7f40fecb70260/transformed/picasso-2.71828/AndroidManifest.xml:9:13-64
+125            android:authorities="com.example.toneit.com.squareup.picasso"
+125-->[com.squareup.picasso:picasso:2.71828] /Users/prasid/.gradle/caches/transforms-3/10c906eec8890b4ca5a7f40fecb70260/transformed/picasso-2.71828/AndroidManifest.xml:10:13-72
+126            android:exported="false" />
+126-->[com.squareup.picasso:picasso:2.71828] /Users/prasid/.gradle/caches/transforms-3/10c906eec8890b4ca5a7f40fecb70260/transformed/picasso-2.71828/AndroidManifest.xml:11:13-37
+127        <provider
+127-->[com.google.firebase:firebase-common:20.0.0] /Users/prasid/.gradle/caches/transforms-3/464a385f8913a9c79429569af29508f0/transformed/firebase-common-20.0.0/AndroidManifest.xml:26:9-31:39
+128            android:name="com.google.firebase.provider.FirebaseInitProvider"
+128-->[com.google.firebase:firebase-common:20.0.0] /Users/prasid/.gradle/caches/transforms-3/464a385f8913a9c79429569af29508f0/transformed/firebase-common-20.0.0/AndroidManifest.xml:27:13-77
+129            android:authorities="com.example.toneit.firebaseinitprovider"
+129-->[com.google.firebase:firebase-common:20.0.0] /Users/prasid/.gradle/caches/transforms-3/464a385f8913a9c79429569af29508f0/transformed/firebase-common-20.0.0/AndroidManifest.xml:28:13-72
+130            android:directBootAware="true"
+130-->[com.google.firebase:firebase-common:20.0.0] /Users/prasid/.gradle/caches/transforms-3/464a385f8913a9c79429569af29508f0/transformed/firebase-common-20.0.0/AndroidManifest.xml:29:13-43
+131            android:exported="false"
+131-->[com.google.firebase:firebase-common:20.0.0] /Users/prasid/.gradle/caches/transforms-3/464a385f8913a9c79429569af29508f0/transformed/firebase-common-20.0.0/AndroidManifest.xml:30:13-37
+132            android:initOrder="100" />
+132-->[com.google.firebase:firebase-common:20.0.0] /Users/prasid/.gradle/caches/transforms-3/464a385f8913a9c79429569af29508f0/transformed/firebase-common-20.0.0/AndroidManifest.xml:31:13-36
+133
+134        <activity
+134-->[com.google.android.gms:play-services-base:17.1.0] /Users/prasid/.gradle/caches/transforms-3/0d9b6c7cf9e852b9dab568e0ea05cb22/transformed/play-services-base-17.1.0/AndroidManifest.xml:23:9-26:75
+135            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+135-->[com.google.android.gms:play-services-base:17.1.0] /Users/prasid/.gradle/caches/transforms-3/0d9b6c7cf9e852b9dab568e0ea05cb22/transformed/play-services-base-17.1.0/AndroidManifest.xml:24:13-79
+136            android:exported="false"
+136-->[com.google.android.gms:play-services-base:17.1.0] /Users/prasid/.gradle/caches/transforms-3/0d9b6c7cf9e852b9dab568e0ea05cb22/transformed/play-services-base-17.1.0/AndroidManifest.xml:25:13-37
+137            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+137-->[com.google.android.gms:play-services-base:17.1.0] /Users/prasid/.gradle/caches/transforms-3/0d9b6c7cf9e852b9dab568e0ea05cb22/transformed/play-services-base-17.1.0/AndroidManifest.xml:26:13-72
+138
+139        <meta-data
+139-->[com.google.android.gms:play-services-basement:17.1.0] /Users/prasid/.gradle/caches/transforms-3/8f7e36878b6339a530b3fb8b6caf86ee/transformed/play-services-basement-17.1.0/AndroidManifest.xml:23:9-25:69
+140            android:name="com.google.android.gms.version"
+140-->[com.google.android.gms:play-services-basement:17.1.0] /Users/prasid/.gradle/caches/transforms-3/8f7e36878b6339a530b3fb8b6caf86ee/transformed/play-services-basement-17.1.0/AndroidManifest.xml:24:13-58
+141            android:value="@integer/google_play_services_version" />
+141-->[com.google.android.gms:play-services-basement:17.1.0] /Users/prasid/.gradle/caches/transforms-3/8f7e36878b6339a530b3fb8b6caf86ee/transformed/play-services-basement-17.1.0/AndroidManifest.xml:25:13-66
+142
+143        <provider
+143-->[androidx.emoji2:emoji2:1.0.0] /Users/prasid/.gradle/caches/transforms-3/97a5649f47a087be1dbf0465053e39f6/transformed/emoji2-1.0.0/AndroidManifest.xml:26:9-34:20
+144            android:name="androidx.startup.InitializationProvider"
+144-->[androidx.emoji2:emoji2:1.0.0] /Users/prasid/.gradle/caches/transforms-3/97a5649f47a087be1dbf0465053e39f6/transformed/emoji2-1.0.0/AndroidManifest.xml:27:13-67
+145            android:authorities="com.example.toneit.androidx-startup"
+145-->[androidx.emoji2:emoji2:1.0.0] /Users/prasid/.gradle/caches/transforms-3/97a5649f47a087be1dbf0465053e39f6/transformed/emoji2-1.0.0/AndroidManifest.xml:28:13-68
+146            android:exported="false" >
+146-->[androidx.emoji2:emoji2:1.0.0] /Users/prasid/.gradle/caches/transforms-3/97a5649f47a087be1dbf0465053e39f6/transformed/emoji2-1.0.0/AndroidManifest.xml:29:13-37
+147            <meta-data
+147-->[androidx.emoji2:emoji2:1.0.0] /Users/prasid/.gradle/caches/transforms-3/97a5649f47a087be1dbf0465053e39f6/transformed/emoji2-1.0.0/AndroidManifest.xml:31:13-33:52
+148                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+148-->[androidx.emoji2:emoji2:1.0.0] /Users/prasid/.gradle/caches/transforms-3/97a5649f47a087be1dbf0465053e39f6/transformed/emoji2-1.0.0/AndroidManifest.xml:32:17-75
+149                android:value="androidx.startup" />
+149-->[androidx.emoji2:emoji2:1.0.0] /Users/prasid/.gradle/caches/transforms-3/97a5649f47a087be1dbf0465053e39f6/transformed/emoji2-1.0.0/AndroidManifest.xml:33:17-49
+150            <meta-data
+150-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/prasid/.gradle/caches/transforms-3/12a56275be9be731931afc41ac7afbb8/transformed/lifecycle-process-2.4.0/AndroidManifest.xml:31:13-33:52
+151                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+151-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/prasid/.gradle/caches/transforms-3/12a56275be9be731931afc41ac7afbb8/transformed/lifecycle-process-2.4.0/AndroidManifest.xml:32:17-78
+152                android:value="androidx.startup" />
+152-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/prasid/.gradle/caches/transforms-3/12a56275be9be731931afc41ac7afbb8/transformed/lifecycle-process-2.4.0/AndroidManifest.xml:33:17-49
+153        </provider>
+154    </application>
+155
+156</manifest>

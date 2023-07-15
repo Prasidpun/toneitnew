@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".message.ChatDetailActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/cardview_dark_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profileImg"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/cardview_dark_background"
+            android:src="@drawable/villainjr"
+            app:civ_border_color="#1E88E5"
+            app:civ_border_width="2dp" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="25dp"
+            android:text="gb pun mgx"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="525dp"
+        app:layout_constraintBottom_toTopOf="@+id/send"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar3" />
+
+    <EditText
+        android:id="@+id/msgText"
+        android:layout_width="280dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginBottom="4dp"
+        android:gravity="center"
+        android:hint="send messages"
+        android:background="@drawable/loginbackround"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/send"
+        android:layout_width="38dp"
+        android:layout_height="42dp"
+        android:src="@drawable/msgsend"
+        app:layout_constraintBottom_toBottomOf="@+id/msgText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toEndOf="@+id/msgText"
+        app:layout_constraintTop_toTopOf="@+id/msgText"
+        app:layout_constraintVertical_bias="0.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>
