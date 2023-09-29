@@ -76,6 +76,9 @@ public class Post {
     }
 
     public long getPostedAt() {
+
+        System.out.println("tfgfhnvgdfgcngc...... "+ postedAt);
+
         return postedAt;
     }
 

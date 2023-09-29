@@ -25,7 +25,10 @@ import com.google.firebase.database.ValueEventListener;
 
 import com.squareup.picasso.Picasso;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 
 
 public class PostAdapter extends RecyclerView.Adapter<PostAdapter.holder> {
@@ -139,6 +142,7 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.holder> {
             holder.like.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
+                    System.out.println("view jhsdbjksd jbdjkshbdjsbax");
                     FirebaseDatabase.getInstance().getReference()
                             .child("posts").child(post.getPostId())
                             .child("like")
@@ -170,9 +174,17 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.holder> {
                         }
                     });
 
-            String text = TimeAgo.using(post.getPostedAt());
-            holder.time.setText(text);
 
+
+
+        DateFormat obj = new SimpleDateFormat("dd MMM yyyy HH:mm");
+        Date sol = new Date(post.getPostedAt());
+        System.out.println(obj.format(sol));
+        String text = obj.format(sol);
+        //if days needed
+           // String text = TimeAgo.using(post.getPostedAt());
+           // holder.time.setText(text);
+       // System.out.println("havshjbvajbdkjw       " + text);
 
             FirebaseDatabase.getInstance().getReference().child("posts")
                     .child(post.getPostId()).child("comments")

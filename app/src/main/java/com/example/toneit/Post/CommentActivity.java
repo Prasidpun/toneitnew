@@ -74,14 +74,17 @@ public class CommentActivity extends AppCompatActivity {
         send.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                System.out.println("comment in");
 
                 FirebaseDatabase.getInstance().getReference().child("Users")
                         .child(FirebaseAuth.getInstance().getUid()).child("profile").addValueEventListener(new ValueEventListener() {
+
                     @Override
                     public void onDataChange(@NonNull DataSnapshot snapshot) {
-                        if (snapshot.exists()) {
+                        System.out.println("comment on database");
+                        if (!snapshot.exists()) {
                            final String img = snapshot.getValue(String.class);
-
+                            System.out.println("comment check in if");
                             CommentModel model = new CommentModel();
                             model.setProfile(img);
                             model.setCommentText(mesText.getText().toString());
@@ -92,6 +95,7 @@ public class CommentActivity extends AppCompatActivity {
                                     .push().setValue(model).addOnSuccessListener(new OnSuccessListener<Void>() {
                                 @Override
                                 public void onSuccess(Void unused) {
+                                    System.out.println("comment check");
                                     mesText.setText("");
                                     Toast.makeText(CommentActivity.this, "you commented this post", Toast.LENGTH_SHORT).show();
 

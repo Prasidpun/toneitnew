@@ -20,6 +20,9 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.FirebaseDatabase;
 
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 public class Signup extends AppCompatActivity {
     public TextView signIn, userName, email, password, repeatPassword;
     private FirebaseAuth mAuth;
@@ -27,7 +30,7 @@ public class Signup extends AppCompatActivity {
     FirebaseDatabase database;
     CheckBox checkBox;
     public Button signUp;
-
+    String pattern = "[A-Za-z]+";  // Regex pattern to match alphabets only
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,36 +49,47 @@ public class Signup extends AppCompatActivity {
 
             @Override
             public void onClick(View view) {
-                if (checkBox.isChecked()) {
-                    if (password.getText().toString().equals(repeatPassword.getText().toString())) {
-                        currentPassword = password.getText().toString();
-                        progressDialog.show();
-                        mAuth = FirebaseAuth.getInstance();
-                        mAuth.createUserWithEmailAndPassword(email.getText().toString(), currentPassword)
-                                .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
-                            @Override
-                            public void onComplete(@NonNull Task<AuthResult> task) {
-                                progressDialog.dismiss();
-                                if (task.isSuccessful()) {
-                                    Users users = new Users(userName.getText().toString(), email.getText().toString(),
-                                            password.getText().toString());
-                                    String id = task.getResult().getUser().getUid();
-                                    database.getInstance().getReference().child("Users").child(id).setValue(users);
-                                    startActivity(new Intent(getBaseContext(), Login.class));
-                                    Toast.makeText(Signup.this, "Account created successfully", Toast.LENGTH_SHORT).show();
-                                } else {
-                                    Toast.makeText(Signup.this, task.getException().getLocalizedMessage(), Toast.LENGTH_SHORT).show();
-                                }
-                            }
-                        });
-                    } else {
-                        Toast.makeText(getBaseContext(), "password did not match", Toast.LENGTH_SHORT).show();
-                    }
-
-                } else {
-                    Toast.makeText(Signup.this, "you must accept terms and conditions to signup", Toast.LENGTH_SHORT).show();
-
+                if(!isValidUsername(userName.getText().toString())){
+                    Toast.makeText(Signup.this, "Invalid username", Toast.LENGTH_SHORT).show();
                 }
+                else if(!isValid(email.getText().toString())){
+                    Toast.makeText(Signup.this, "Invalid Email Format", Toast.LENGTH_SHORT).show();
+                } else if (!isValidPassword(password.getText().toString())) {
+                    Toast.makeText(Signup.this, "Use strong Password", Toast.LENGTH_SHORT).show();
+                }
+                else {
+                    if (checkBox.isChecked()) {
+                        if (password.getText().toString().equals(repeatPassword.getText().toString())) {
+                            currentPassword = password.getText().toString();
+                            progressDialog.show();
+                            mAuth = FirebaseAuth.getInstance();
+                            mAuth.createUserWithEmailAndPassword(email.getText().toString(), currentPassword)
+                                    .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                                        @Override
+                                        public void onComplete(@NonNull Task<AuthResult> task) {
+                                            progressDialog.dismiss();
+                                            if (task.isSuccessful()) {
+                                                Users users = new Users(userName.getText().toString(), email.getText().toString(),
+                                                        password.getText().toString());
+                                                String id = task.getResult().getUser().getUid();
+                                                database.getInstance().getReference().child("Users").child(id).setValue(users);
+                                                startActivity(new Intent(getBaseContext(), Login.class));
+                                                Toast.makeText(Signup.this, "Account created successfully", Toast.LENGTH_SHORT).show();
+                                            } else {
+                                                Toast.makeText(Signup.this, task.getException().getLocalizedMessage(), Toast.LENGTH_SHORT).show();
+                                            }
+                                        }
+                                    });
+                        } else {
+                            Toast.makeText(getBaseContext(), "password did not match", Toast.LENGTH_SHORT).show();
+                        }
+
+                    } else {
+                        Toast.makeText(Signup.this, "you must accept terms and conditions to signup", Toast.LENGTH_SHORT).show();
+
+                    }
+                }
+
             }
         });
     }
@@ -102,5 +116,52 @@ public class Signup extends AppCompatActivity {
 
     }
 
+
+
+
+        public static boolean validateString(String input, String pattern) {
+            Pattern regex = Pattern.compile(pattern);
+            Matcher matcher = regex.matcher(input);
+            return matcher.matches();
+        }
+        //added today for email validation
+    public static boolean isValid(String email)
+    {
+        String regex = "^[\\w!#$%&'*+/=?`{|}~^-]+(?:\\.[\\w!#$%&'*+/=?`{|}~^-]+)*@(?:[a-zA-Z0-9-]+\\.)+[\\a-zA-Z]{2,6}";
+        Pattern pattern = Pattern.compile(regex);
+        if (email == null)
+            return false;
+        return pattern.matcher(email).matches();
+    }
+    public static boolean isValidUsername(String name)
+    {
+        String regex = "^[A-Za-z]\\w{5,29}$";
+        Pattern p = Pattern.compile(regex);
+        if (name == null) {
+            return false;
+        }
+        Matcher m = p.matcher(name);
+        return m.matches();
+    }
+    public static boolean
+    isValidPassword(String password)
+    {
+
+        String regex = "^(?=.*[0-9])"
+                + "(?=.*[a-z])(?=.*[A-Z])"
+                + "(?=.*[@#$%^&+=])"
+                + "(?=\\S+$).{8,20}$";
+
+
+        Pattern p = Pattern.compile(regex);
+
+        if (password == null) {
+            return false;
+        }
+
+        Matcher m = p.matcher(password);
+
+        return m.matches();
+    }
 
 }

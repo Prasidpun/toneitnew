@@ -8,7 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
-
+import java.util.*;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 import androidx.recyclerview.widget.RecyclerView;
@@ -20,12 +20,16 @@ import com.github.marlonlom.utilities.timeago.TimeAgo;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
+import java.util.Date;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 
 
 public class HomePostAdapter extends RecyclerView.Adapter<HomePostAdapter.holder> {
@@ -136,9 +140,13 @@ public class HomePostAdapter extends RecyclerView.Adapter<HomePostAdapter.holder
 
         });
 
-        holder.like.setOnClickListener(new View.OnClickListener() {
+       /* holder.like.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                System.out.println("check like");
+                System.out.println("check like" + FirebaseAuth.getInstance().getUid());
+
+
                 FirebaseDatabase.getInstance().getReference()
                         .child("posts").child(post.getPostId())
                         .child("like")
@@ -146,6 +154,41 @@ public class HomePostAdapter extends RecyclerView.Adapter<HomePostAdapter.holder
 
             }
         });
+*/
+        holder.like.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                DatabaseReference postRef = FirebaseDatabase.getInstance().getReference()
+                        .child("posts").child(post.getPostId());
+
+                // Get the reference to the "like" node under the specific post
+                DatabaseReference likeRef = postRef.child("like");
+
+                String currentUserId = FirebaseAuth.getInstance().getUid();
+
+                // Check if the user has already liked the post
+                likeRef.addListenerForSingleValueEvent(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                        if (dataSnapshot.hasChild(currentUserId)) {
+                            // User has already liked the post, so unlike it.
+                            likeRef.child(currentUserId).removeValue();
+                        } else {
+                            // User has not liked the post, so like it.
+                            likeRef.child(currentUserId).setValue(true);
+                        }
+                    }
+
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError databaseError) {
+                        // Handle the error if the operation was canceled
+                        // For example, due to security rules preventing access to the node
+                    }
+                });
+            }
+        });
+
+
 
         FirebaseDatabase.getInstance().getReference().child("posts").child(post.getPostId())
                 .child("like")
@@ -156,10 +199,13 @@ public class HomePostAdapter extends RecyclerView.Adapter<HomePostAdapter.holder
 
                             likeCount = (int) snapshot.getChildrenCount();
                             holder.likeCount.setText(Integer.toString(likeCount));
+                            System.out.println("like count " + likeCount);
 
                         } else {
 
                             holder.likeCount.setText("0");
+                            System.out.println("like count in else" + likeCount);
+
                         }
 
                     }
@@ -169,10 +215,12 @@ public class HomePostAdapter extends RecyclerView.Adapter<HomePostAdapter.holder
 
                     }
                 });
-
-        String text = TimeAgo.using(post.getPostedAt());
+        DateFormat obj = new SimpleDateFormat("dd MMM yyyy HH:mm");
+        Date sol = new Date(post.getPostedAt());
+        System.out.println(obj.format(sol));
+        String text = obj.format(sol);
         holder.time.setText(text);
-
+        System.out.println("avshjbvajbdkjw       " + text);
 
         FirebaseDatabase.getInstance().getReference().child("posts")
                 .child(post.getPostId()).child("comments")
